@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Dozer - To remove all the useless stuff</title>
+        <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+
+        <link rel="stylesheet" href="/styles/index.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div>
+                <div>
+                    <img src="/images/logo.svg">
+                    <span>
+                        <label>Dozer</label>
+                        <label>To remove all the useless stuff</label>
+                    </span>
+                </div>
+
+                <div>
+                    <div>
+                        <input type="button" value="Feed" onclick="Dozer.load()">
+                        <input type="text" placeholder="Enter your website URL here...">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="keepPictures">
+                        <label for="keepPictures">keep pictures</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="information">Feed the dozer to see what has been scrapped.</div>
+        </header>
+
+        <main>
+            <div><h1>Feed the dozer with a messy website.</h1></div>
+        </main>
+
+        <footer>
+            <div>
+                <div>
+                    <label>Quick search :</label>
+                    <input type="text" placeholder="Enter your keywords here..." id="keyword" onkeyup="Dozer.search()">
+                </div>
+
+                <div>
+                    &copy;2020 Corentin ROBIN
+                </div>
+            </div>
+        </footer>
+
+        <script src="/scripts/index.js"></script>
+
+    </body>
+</html>
